@@ -1,0 +1,60 @@
+{
+  "name": "gridnine-systems-test",
+  "version": "0.1.0",
+  "description": "Test app for Gridnine systems",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andomiele/avia_search.git"
+  },
+  "author": "Andomiele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andomiele/avia_search/issues"
+  },
+  "homepage": "https://github.com/andomiele/avia_search#readme",
+  "jest": {
+    "verbose": true,
+    "testEnvironmentOptions": {
+      "url": "http://localhost/"
+    },
+    "testEnvironment": "jsdom"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.2",
+    "i18next": "^22.4.5",
+    "lodash": "^4.17.21",
+    "on-change": "^4.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "css-loader": "^6.10.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "sass": "^1.72.0",
+    "postcss": "^8.4.18",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^8.1.1",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.3"
+  }
+}

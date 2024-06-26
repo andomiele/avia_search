@@ -1,0 +1,53 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Avia search</title>
+  </head>
+  <body>
+    <div class="search-results">
+      <div class="sider-filter">
+        <div class="form_radio form">
+          <p>Сортировать</p>
+          <div>
+            <input class="radio" type="radio" name="sort_flights" value="increase_price" checked>
+            <span> - по возрастанию цены </span>
+            <br>
+            <input class="radio" type="radio" name="sort_flights" value="decrease_price">
+            <span> - по убыванию цены </span>
+            <br>
+            <input class="radio" type="radio" name="sort_flights" value="travelling_time">
+            <span> - по времени в пути </span>
+          </div>
+        </div>
+        <div class="transfer_filter form">
+          <p>Фильтровать</p>
+          <div class="checker">
+            <input type="checkbox" value="transfer">
+            <span> - 1 пересадка </span>
+          </div>
+          <div class="checker">
+            <input type="checkbox" value="whithout">
+            <span> - без пересадок </span>
+          </div>
+        </div>
+        <div class="prise_filter form">
+          <p>Цена</p>
+          <div class="input">
+            <span>От</span>
+            <input class="text" value="0">
+          </div>
+          <div class="input">
+            <span>До</span>
+            <input class="text" value="1 000 000">
+          </div>
+        </div>
+        <div class="airline_filter form">
+          <p>Авиакомпания</p>
+          <div class="carriers">
+          </div>
+        </div>
+      </div>
+      <div class="main-list">
+      </div>
+  </body>
+</html>
